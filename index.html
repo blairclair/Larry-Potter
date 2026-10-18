@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Larissa Potter and the Flying Derby</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="stage">
+    <canvas id="game"></canvas>
+    <div id="ui">
+      <div id="hud" class="hidden">
+        <div class="meters">
+          <div class="meter" data-k="trust"><label>Trust</label><div class="bar"><i></i></div><b></b></div>
+          <div class="meter" data-k="safety"><label>Safety</label><div class="bar"><i></i></div><b></b></div>
+        </div>
+        <div class="hud-chapter"></div>
+        <div class="hud-keys"><span><kbd>K</kbd> Skills<em class="sp-dot hidden"></em></span><span><kbd>J</kbd> Journal</span></div>
+      </div>
+      <div id="prompt" class="hidden"></div>
+      <div id="dialogue" class="hidden">
+        <div class="dlg-portrait"><canvas id="portrait"></canvas></div>
+        <div class="dlg-body">
+          <div class="dlg-name"></div>
+          <div class="dlg-text"></div>
+          <div class="dlg-choices"></div>
+          <div class="dlg-more">▼</div>
+        </div>
+      </div>
+      <div id="panel-wrap" class="hidden"><div id="panel"></div></div>
+      <div id="toasts"></div>
+      <div id="title" class="hidden">
+        <div class="title-inner">
+          <div class="title-kicker">A tale of a world that forgot to resist</div>
+          <h1>Larissa Potter</h1>
+          <h2>and the Flying Derby</h2>
+          <div class="title-buttons">
+            <button data-act="new">New Game</button>
+            <button data-act="continue">Continue</button>
+          </div>
+          <div class="title-foot">First pass · WASD / Arrows to move · E to interact · Space to advance</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/core.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/dialogue.js"></script>
+  <script src="js/skills.js"></script>
+  <script src="js/scenes/explore.js"></script>
+  <script src="js/scenes/cinematic.js"></script>
+  <script src="js/scenes/derby.js"></script>
+  <script src="js/scenes/minigames.js"></script>
+  <script src="js/scenes/title.js"></script>
+  <script src="js/story.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

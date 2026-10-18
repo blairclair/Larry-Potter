@@ -1,0 +1,22 @@
+
+# errata-managed agent skills (daemon-synced; namespaced)
+.agents/skills/errata-*/
+.claude/skills/errata-*/
+.cursor/skills/errata-*/
+
+# local errata runtime state and machine-specific agent tooling
+.errata/
+.errataignore
+.agents/
+.claude/
+.codex/
+.cursor/
+.github/copilot-instructions.md
+.aider.conf.yml
+.mcp.json
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+
+# reference photos of real people — keep out of the public repo
+assets/reference/
